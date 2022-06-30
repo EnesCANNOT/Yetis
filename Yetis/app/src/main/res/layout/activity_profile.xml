@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/profileActivityUserNameTextView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Username : "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profileActivityCurrentPasswordTextView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Current Password : "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/profileActivityEmailTextView"
+        app:layout_constraintTop_toTopOf="@+id/profileActivityCurrentPasswordEditText" />
+
+    <TextView
+        android:id="@+id/profileActivityNewPasswordTextView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="New Password : "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/profileActivityCurrentPasswordTextView"
+        app:layout_constraintTop_toTopOf="@+id/profileActivityNewPasswordEditText" />
+
+    <TextView
+        android:id="@+id/profileActivityEmailTextView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Email : "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/profileActivityFullNameTextView"
+        app:layout_constraintTop_toTopOf="@+id/profileActivityEmailEditText" />
+
+    <TextView
+        android:id="@+id/profileActivityFullNameTextView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Fullname : "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/profileActivityUserNameTextView"
+        app:layout_constraintTop_toTopOf="@+id/profileActivityFullNameEditText" />
+
+    <EditText
+        android:id="@+id/profileActivityUserNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/profileActivityUserNameTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/profileActivityFullNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/profileActivityUserNameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/profileActivityUserNameEditText" />
+
+    <EditText
+        android:id="@+id/profileActivityEmailEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/profileActivityFullNameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/profileActivityFullNameEditText" />
+
+    <EditText
+        android:id="@+id/profileActivityCurrentPasswordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/profileActivityEmailEditText"
+        app:layout_constraintTop_toBottomOf="@+id/profileActivityEmailEditText" />
+
+    <EditText
+        android:id="@+id/profileActivityNewPasswordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/profileActivityCurrentPasswordEditText"
+        app:layout_constraintTop_toBottomOf="@+id/profileActivityCurrentPasswordEditText" />
+
+    <Button
+        android:id="@+id/buttonSaveChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:onClick="saveChanges"
+        android:text="Save Changes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileActivityNewPasswordEditText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

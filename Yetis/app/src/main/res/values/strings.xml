@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Yetis</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">a</string>
+    <string name="close">b</string>
+    <string name="title_activity_provide_service">ProvideServiceActivity</string>
+</resources>

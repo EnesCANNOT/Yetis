@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "382656955108",
+    "project_id": "yetis-caceb",
+    "storage_bucket": "yetis-caceb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382656955108:android:f9d286505679ae8745a2f1",
+        "android_client_info": {
+          "package_name": "com.helloworldstudios.yetis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382656955108-955mbvudmsjm7vskqfra3265tea9e87b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpt-yColAZbp9r9CkK0oEGqY7UnVdUDNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382656955108-955mbvudmsjm7vskqfra3265tea9e87b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
